@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chris Price Web Design</title>
+  <meta name="description" content="Clean, functional, affordable websites for small businesses in Utah." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Chris Price Web Design</h1>
+    <p>Clean • Functional • Affordable</p>
+  </header>
+
+  <main>
+    <section id="services">
+      <h2>Services</h2>
+      <ul>
+        <li>One-page websites</li>
+        <li>Contact forms wired to email</li>
+        <li>Basic local SEO setup</li>
+        <li>Domain & hosting setup</li>
+      </ul>
+    </section>
+
+    <section id="work">
+      <h2>Recent Work</h2>
+      <p><a href="https://crispyrice78.github.io/monster-lawn-mowing/" target="_blank">Monster Lawn Mowing</a> — one-page site + form</p>
+    </section>
+
+    <section id="contact">
+      <h2>Get a Free Quote</h2>
+      <form id="quote" action="#" method="POST">
+        <label>Name <input type="text" name="name" required></label>
+        <label>Email <input type="email" name="email" required></label>
+        <label>What do you need?
+          <select name="service" required>
+            <option value="" disabled selected>Select one</option>
+            <option>One-page site</option>
+            <option>Multi-page site</option>
+            <option>Fix/cleanup</option>
+          </select>
+        </label>
+        <label>Message <textarea name="message" rows="4"></textarea></label>
+        <button type="submit">Send request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <small>© <span id="y"></span> Chris Price Web Design</small>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
