@@ -1,0 +1,80 @@
+/* Reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+.site-header {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+.site-header h1 { font-size: 2.2rem; margin-bottom: 10px; }
+.site-header p { font-size: 1.2rem; }
+
+/* Sections */
+main { max-width: 900px; margin: auto; padding: 20px; }
+h2 { color: #2e7d32; margin: 25px 0 15px; }
+
+/* Services */
+#services ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 12px;
+}
+#services li {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Work */
+#work p a {
+  color: #2e7d32;
+  text-decoration: none;
+}
+#work p a:hover { text-decoration: underline; }
+
+/* Contact form */
+form label {
+  display: block;
+  margin: 12px 0 5px;
+  font-weight: bold;
+}
+form input, form select, form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+form button {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form button:hover { background: #1b5e20; }
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #eee;
+  margin-top: 40px;
+}
